@@ -4,9 +4,11 @@
         <div class="container">
 
             <div class="wrapper">
+
                 <nav class="footer-navbar">
-                    <ul class="d-flex gap-20">
-                        @foreach($footer_nav as $key => $links )
+
+                    @foreach($footer_nav as $key => $links )
+                    <ul>
                         <li>
                             <h5> {{$key}}</h5>
                             <ul>
@@ -17,8 +19,8 @@
                                 @endforeach
                             </ul>
                         </li>
-                        @endforeach
                     </ul>
+                    @endforeach
                 </nav>
             </div>
         </div>
@@ -26,7 +28,7 @@
 
     <div class="bg-grey">
 
-        <div class="container barra">
+        <div class="container social-links">
             <a href="#" class="btn">SIGN-UP NOW!</a>
 
             <div class="socials-links">

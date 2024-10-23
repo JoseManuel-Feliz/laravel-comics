@@ -1,16 +1,16 @@
 <header>
 
-    <div class="bg-blu">
-        <span>
-            DC POPWER <small>logo font awesome</small>
-            VISA <small>logo font awesome</small>
-        </span>
-
-        <span>
-            ADDITIONAL SITES <small>logo font awesome</small>
-        </span>
-    </div>
     <div class="container">
+        <div class="bg-blu">
+            <span>
+                DC POPWER <small><i class="fa-solid fa-trademark"></i></small>
+                VISA <small><i class="fa-regular fa-registered"></i></small>
+            </span>
+
+            <span>
+                ADDITIONAL SITES <small><i class="fa-solid fa-caret-down"></i></small>
+            </span>
+        </div>
 
         <nav class="navbar wrapper">
             <div class="logo-wrapper">
@@ -25,8 +25,13 @@
                 @endforeach
             </ul>
 
-            <div>
-                <input type="text" placeholder="Search">
+            <div class="input-wrapper">
+
+                <span class="p-absolute">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+
+                <input type="text" placeholder="search">
             </div>
         </nav>
 
