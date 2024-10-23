@@ -14,7 +14,7 @@
 
         <nav class="navbar wrapper">
             <div class="logo-wrapper">
-                <img src="{{URL::asset('images/dc-logo.png')}}" alt="">
+                <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
             </div>
 
             <ul class="gap-20">

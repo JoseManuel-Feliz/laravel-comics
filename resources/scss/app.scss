@@ -173,14 +173,14 @@ main {
 
 footer {
     .bg-wrapper {
-        background: url("../../public/images/footer-bg.jpg") 0 0 / cover no-repeat;
+        background: url("../img/footer-bg.jpg") 0 0 / cover no-repeat;
         height: 350px;
 
         .container {
             height: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            background-image: url("../../public/images/dc-logo-bg.png");
+            background-image: url("../img/dc-logo-bg.png");
             background-repeat: no-repeat;
             background-position: right;
 
