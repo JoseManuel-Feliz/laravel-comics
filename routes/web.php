@@ -18,5 +18,10 @@ Route::get('/home', function () {
 });
 
 Route::get('/comics', function () {
-    return view('pages.comics');
+    $comics = config("php_db.comics");
+    $links = config("php_db.header.links");
+    $footer_nav = config("php_db.footer.footer_links");
+    $footer_img = config("php_db.footer.img_paths");
+
+    return view('pages.comics', compact('comics', 'links', 'footer_nav', 'footer_img'));
 });
