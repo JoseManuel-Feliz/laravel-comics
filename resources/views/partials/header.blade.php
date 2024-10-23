@@ -18,9 +18,9 @@
             </div>
 
             <ul class="gap-20">
-                @foreach($links as $link)
+                @foreach($links as $key => $link)
                 <li>
-                    <a href="#"> {{$link}} </a>
+                    <a class="nav-link" href="#"> {{Str::of($link)->upper }} </a>
                 </li>
                 @endforeach
             </ul>
@@ -31,7 +31,7 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
 
-                <input type="text" placeholder="search">
+                <input type="text" placeholder="Search">
             </div>
         </nav>
 

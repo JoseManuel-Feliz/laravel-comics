@@ -10,11 +10,11 @@
                     @foreach($footer_nav as $key => $links )
                     <ul>
                         <li>
-                            <h5> {{$key}}</h5>
+                            <h5> {{Str::of($key)->upper}}</h5>
                             <ul>
                                 @foreach($links as $link)
                                 <li>
-                                    {{$link}}
+                                    {{Str::of($link)->title}}
                                 </li>
                                 @endforeach
                             </ul>

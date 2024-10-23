@@ -13,7 +13,8 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '~resources': "/resources/"
+            '~resources': "/resources/",
+            '~font': path.resolve(__dirname, 'resources/assets/fonts'),
         }
     }
 });
