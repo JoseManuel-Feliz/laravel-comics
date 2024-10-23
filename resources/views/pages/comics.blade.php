@@ -11,8 +11,7 @@
 @section("main-content")
 
 <section>
-    <div>
-        <!-- <img src="{{URL::asset('images/jumbotron.jpg')}}" alt=""> -->
+    <div class="jumbotrom">
     </div>
 </section>
 <section>
