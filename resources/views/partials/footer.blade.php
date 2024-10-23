@@ -36,7 +36,7 @@
                     @foreach($footer_img as $img)
                     <li>
                         <a href="#">
-                            <img src="{{URL::asset('images/footer-').$img}}" alt="{{$img}}">
+                            <img src="{{Vite::asset('resources/img/footer-').$img}}" alt="{{$img}}">
                         </a>
                     </li>
                     @endforeach
