@@ -1,5 +1,13 @@
 @extends("layouts.app")
 
+@section("cdn")
+<!-- FONT AWESOME ICONS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'
+    integrity='sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=='
+    crossorigin='anonymous' />
+
+@endsection
+
 @section("main-content")
 
 <section>
@@ -12,15 +20,16 @@
         <ul>
             @foreach($comics as $comic)
             <li>
-                <a href="#">
-                    <h3>{{$comic['title']}}</h3>
+
+                <div class="comic-img">
                     <img src="{{$comic['thumb']}}" alt="$comic['title']">
-                    <p>{{$comic['description']}}</p>
-                    <p>{{$comic['price']}}</p>
-                    <p>{{$comic['series']}}</p>
-                    <p>{{$comic['sale_date']}}</p>
-                    <p>{{$comic['type']}}</p>
-                </a>
+                </div>
+                <h3>{{$comic['title']}}</h3>
+                <p>{{$comic['price']}}</p>
+                <p>{{$comic['series']}}</p>
+                <p>{{$comic['sale_date']}}</p>
+                <p>{{$comic['type']}}</p>
+
             </li>
             @endforeach
         </ul>
