@@ -59,18 +59,17 @@ header {
             display: flex;
             margin-bottom: 5px;
 
-            li {
+            a {
                 height: 100px;
                 align-items: center;
                 display: flex;
                 &:hover,
                 &.active {
                     box-shadow: 0 5px #0182f9;
+                    color: #0182f9;
                 }
-                a {
-                    font: 800 12px Arial;
-                    color: #636363;
-                }
+                font: 800 12px Arial;
+                color: #636363;
             }
         }
         .input-wrapper {
