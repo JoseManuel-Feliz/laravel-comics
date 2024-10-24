@@ -6,13 +6,8 @@ import.meta.glob([
     '../img/**',
     '../fonts/**',
 
-]);
-document.querySelectorAll(".nav-link").forEach((item) =>
-    item.addEventListener("click", function (event) {
-        event.preventDefault();
-        document
-            .querySelectorAll(".nav-link")
-            .forEach((item) => item.classList.remove("active"));
-        this.classList.add("active")
-    })
-);
+]); document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+    }
+});
