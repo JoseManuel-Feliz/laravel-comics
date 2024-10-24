@@ -35,6 +35,15 @@ ul {
         text-decoration: none;
     }
 }
+.error {
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    img {
+        width: 70%;
+        height: 100%;
+    }
+}
 
 header {
     background: linear-gradient(to bottom, #0182f9 15%, #fff 15%);
