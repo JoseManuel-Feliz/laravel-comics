@@ -18,9 +18,9 @@
             </div>
 
             <ul class="gap-20">
-                @foreach($links as $key => $link)
+                @foreach($links as $link)
                 <li>
-                    <a class="nav-link" href="#"> {{Str::of($link)->upper }} </a>
+                    <a class="nav-link" href="{{ route($link)}}"> {{Str::of($link)->upper }} </a>
                 </li>
                 @endforeach
             </ul>
