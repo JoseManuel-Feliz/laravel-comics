@@ -4,7 +4,7 @@ return [
         "characters",
         "comics",
         "movies",
-        "TV",
+        "tv",
         "games",
         "collectibles",
         "videos",

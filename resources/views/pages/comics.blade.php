@@ -23,17 +23,15 @@
 <section>
     <div class="content-wrapper container">
         <ul>
-            @foreach($comics as $comic)
+            @foreach($comics as $index => $comic)
             <li>
 
-                <div class="comic-img">
-                    <img src="{{$comic['thumb']}}" alt="$comic['title']">
-                </div>
-                <h3>{{$comic['title']}}</h3>
-                <p>{{$comic['price']}}</p>
-                <p>{{$comic['series']}}</p>
-                <p>{{$comic['sale_date']}}</p>
-                <p>{{$comic['type']}}</p>
+                <a href="{{route('comic', $index)}}">
+                    <div class="comic-img">
+                        <img src="{{$comic['thumb']}}" alt="$comic['title']">
+                    </div>
+                    <p>{{$comic['title']}}</p>
+                </a>
 
             </li>
             @endforeach
